@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Website Test</title>
+  <style>
+    body{
+        background-color:dimgray;
+    }
+    /* CSS for the container holding the images */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* CSS for each individual image */
+    .image-container img {
+      width: 33.33%;
+      /* padding: 5px; */
+      box-sizing: border-box;
+    }
+    
+    /* CSS for the text section */
+    .text-section {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+    }
+    .text-section h1{
+        font-size: 40px;
+    }
+    .text-section p{
+        font-size: 100px;
+    }
+    
+    
+    /* CSS for responsiveness */
+    @media screen and (max-width: 768px) {
+      .image-container img {
+        width: 50%; 
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .image-container img {
+        width: 100%;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="pic1.png" alt="Image 1">
+    <img src="pic3.png" alt="Image 1">
+    <img src="pic7.png" alt="Image 2">
+    <img src="pic4.png" alt="Image 2">
+    <img src="pic8.png" alt="Image 2">
+    <img src="pic6.png" alt="Image 2">
+  </div>
+  
+  <div class="text-section">
+    <p>K9OC</p>
+    <h1>Welcome to the Food Hub</h1>
+  </div>
+</body>
+</html>
